@@ -53,7 +53,7 @@ We evaluate the predictive model using common metrics:
 
 ### Model 1 vs Model 2 Performance
 
-| **Metrics**              | **Model 1**  | **Model 2**  |
+| **Metrics**              | **Model 1**  | **Model 2 (Selected)**  |
 |--------------------------|--------------|--------------|
 | **Features**             | 'Sleep Duration', 'Stress Level', 'Age', 'Occupation_Engineer', 'BMI Category_Normal', 'Gender_Female', 'Physical Activity Level' | 'Sleep Duration', 'Stress Level', 'Age', 'Occupation_Engineer', 'BMI Category_Normal', 'Gender_Female', 'Physical Activity Level', 'Occupation_Scientist', 'Occupation_Sales Representative', 'Occupation_Doctor', 'BMI Category_Overweight', 'Gender_Male', 'Sleep Disorder_Insomnia', 'Occupation_Salesperson' |
 | **Mean Absolute Error (MAE)** | 0.0297       | 0.0297       |
