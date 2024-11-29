@@ -35,12 +35,12 @@ We perform necessary transformations, such as:
 - Creating features for outlier detection and handling.
 
 ### 3. **Outlier Detection**
-Outliers are detected and visualized using **boxplots**, which help identify extreme values in the dataset that could affect model performance. The boxplot method helps to visually identify potential outliers for further examination.
+Outliers are detected and visualized using **boxplots**, which help identify extreme values in the dataset that could affect model performance.
 
 ### 4. **Predictive Modeling**
 Using machine learning algorithms, we aim to predict **Quality of Sleep** based on the various features. Key steps include:
 - Preprocessing the data.
-- Selecting appropriate models (e.g., Random Forest, Gradient Boosting).
+- Selecting appropriate models (e.g., Gradient Boosting).
 - Evaluating model performance using metrics such as Mean Absolute Error (MAE), Mean Squared Error (MSE), and R² Score.
 
 ### 5. **Model Evaluation**
@@ -49,37 +49,22 @@ We evaluate the predictive model using common metrics:
 - **MSE (Mean Squared Error)**: Provides a quadratic penalty for larger errors.
 - **R² Score**: Measures the proportion of variance explained by the model.
 
+## Model Comparison
+
+### Model 1 vs Model 2 Performance
+
+| **Metrics**              | **Model 1**  | **Model 2**  |
+|--------------------------|--------------|--------------|
+| **Features**             | 'Sleep Duration', 'Stress Level', 'Age', 'Occupation_Engineer', 'BMI Category_Normal', 'Gender_Female', 'Physical Activity Level' | 'Sleep Duration', 'Stress Level', 'Age', 'Occupation_Engineer', 'BMI Category_Normal', 'Gender_Female', 'Physical Activity Level', 'Occupation_Scientist', 'Occupation_Sales Representative', 'Occupation_Doctor', 'BMI Category_Overweight', 'Gender_Male', 'Sleep Disorder_Insomnia', 'Occupation_Salesperson' |
+| **Mean Absolute Error (MAE)** | 0.0297       | 0.0297       |
+| **Mean Squared Error (MSE)**  | 0.0214       | 0.0113       |
+| **R² Score**              | 0.9826       | 0.9908       |
+
 ## Technologies Used
 
-- **Python 3.x**
+- **Python 3.13**
 - **Libraries**: pandas, numpy, seaborn, matplotlib, scikit-learn
 - **Jupyter Notebooks** for exploratory data analysis and modeling
-
-## Installation
-
-1. Clone this repository:
-
-    ```bash
-    git clone https://github.com/yourusername/sleep-health-predictive-modeling.git
-    ```
-
-2. Navigate to the project directory:
-
-    ```bash
-    cd sleep-health-predictive-modeling
-    ```
-
-3. Install required dependencies:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-4. Run Jupyter Notebook:
-
-    ```bash
-    jupyter notebook
-    ```
 
 ## How to Use
 
@@ -88,11 +73,3 @@ We evaluate the predictive model using common metrics:
 3. **Outlier Detection**: Use the boxplots to detect and address outliers.
 4. **Build Predictive Models**: Select and train machine learning models to predict **Quality of Sleep**. Evaluate their performance and choose the best model.
 5. **Model Evaluation**: Review the evaluation metrics and finalize the model.
-
-## Example Usage
-
-Run the notebook or script for data exploration and predictive modeling:
-
-```bash
-python data_exploration.py
-python predictive_modeling.py
