@@ -72,4 +72,4 @@ We evaluate the predictive model using common metrics:
 2. **Feature Engineering**: After exploring the data, proceed to clean and prepare the dataset for modeling, such as splitting the `Blood Pressure` column and adjusting the `BMI Category`.
 3. **Outlier Detection**: Use the boxplots to detect and address outliers.
 4. **Build Predictive Models**: Select and train machine learning models to predict **Quality of Sleep**. Evaluate their performance and choose the best model.
-5. **Model Evaluation**: Review the evaluation metrics and finalize the model.
+5. **Model Evaluation**: Review the evaluation metrics and finalize the model. 
