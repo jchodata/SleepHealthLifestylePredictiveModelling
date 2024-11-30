@@ -1,2 +1,45 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# ============================================
+# 1. Line Endings Normalization
+# ============================================
+
+# Normalize line endings for text files (LF for cross-platform consistency)
+*.py text eol=lf
+*.md text eol=lf
+*.csv text eol=lf
+*.json text eol=lf
+
+# ============================================
+# 2. Jupyter Notebooks
+# ============================================
+
+# Treat Jupyter Notebooks as text files for diffs and merges
+*.ipynb text diff=jupyternotebook
+
+# ============================================
+# 3. Binary Files
+# ============================================
+
+# Mark images or binary files to prevent Git from attempting to diff them
+*.png binary
+*.jpg binary
+*.jpeg binary
+
+# ============================================
+# 4. Dataset Files
+# ============================================
+
+# Treat large datasets as binary (or set up for Git LFS if applicable)
+*.csv filter=lfs diff=lfs merge=lfs
+
+# ============================================
+# 5. Exclude Logs and Generated Files
+# ============================================
+
+# Ignore logs or temporary files from archive outputs
+*.log export-ignore
+*.pyc export-ignore
+*.pyo export-ignore
+
+# Ignore virtual environment files
+venv/ export-ignore
+__pycache__/ export-ignore
